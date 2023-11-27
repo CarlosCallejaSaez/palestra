@@ -1,22 +1,28 @@
-import { useState } from 'react'
+import AppRoutes from "./AppRoutes";
 
-import './App.css'
-import QRGenerator from './components/QRGenerator/QRGenerator'
-import GymExerciseTable from './components/GymExerciseTable/GymExerciseTable'
-import DarkMode from './components/DarkMode/DarkMode'
-
+import Loading from "./components/Loading/Loading";
+import { useLoading } from "./hooks/useLoading";
+import { setLoadingInterceptor } from "./interceptors/loadingInterceptor";
+import { useEffect } from "react";
+import DarkMode from "./components/DarkMode/DarkMode";
 
 function App() {
-  
+  const { showLoading, hideLoading } = useLoading();
+
+  useEffect(() => {
+    setLoadingInterceptor({ showLoading, hideLoading });
+  }, []);
 
   return (
-    <div className="App">
-   <DarkMode/>
-     <QRGenerator/>
+    <>
     
-    <GymExerciseTable/>
-    </div>
-  )
+      <DarkMode/>
+      
+      <Loading />
+
+      <AppRoutes />
+    </>
+  );
 }
 
-export default App
+export default App;
