@@ -6,6 +6,8 @@ import { setLoadingInterceptor } from "./interceptors/loadingInterceptor";
 import { useEffect } from "react";
 import DarkMode from "./components/DarkMode/DarkMode";
 
+
+
 function App() {
   const { showLoading, hideLoading } = useLoading();
 
@@ -13,6 +15,9 @@ function App() {
     setLoadingInterceptor({ showLoading, hideLoading });
   }, []);
 
+  
+
+  
   return (
     <>
     
@@ -21,6 +26,8 @@ function App() {
       <Loading />
 
       <AppRoutes />
+
+   
     </>
   );
 }

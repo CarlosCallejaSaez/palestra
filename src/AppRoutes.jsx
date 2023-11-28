@@ -15,6 +15,9 @@ import Tutorial from "./components/Tutorial/Tutorial";
 
 
 export default function AppRoutes() {
+
+  
+
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />

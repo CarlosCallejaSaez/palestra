@@ -1,0 +1,53 @@
+
+.container {
+    text-align: center;
+    margin: 50px;
+  }
+  
+  .timer {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .rest-time-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .rest-time-button {
+    font-size: 1em;
+    padding: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .rest-time-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .rest-time-value {
+    font-size: 1.2em;
+    margin: 0 10px;
+  }
+  

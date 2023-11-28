@@ -11,6 +11,11 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { LoadingProvider } from "./hooks/useLoading";
 import "./interceptors/authInterceptor";
+import 'leaflet/dist/leaflet.css';
+
+
+
+
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -34,6 +39,9 @@ root.render(
             pauseOnHover
             theme="light"
           />
+
+
+
 
         </AuthProvider>
       </LoadingProvider>
