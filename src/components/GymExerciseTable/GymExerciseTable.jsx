@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import classes from "./GymExerciseTable.module.css"
 
 const GymExerciseTable = () => {
   const [exerciseList, setExerciseList] = useState(generateRandomExercises());
@@ -52,10 +53,10 @@ const GymExerciseTable = () => {
   };
 
   return (
-    <div>
+    <div className={classes.container}>
       <h2>Gym Exercise Table</h2>
       <button onClick={regenerateTable}>Generate Random Exercises</button>
-      <table>
+      <table className={classes.table}>
         <thead>
           <tr>
             <th>Exercise</th>

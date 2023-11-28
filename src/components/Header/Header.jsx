@@ -22,6 +22,11 @@ export default function Header() {
                 <Link to="/dashboard"> 🦾 Glad to see you again, {user.name} 🦾</Link>
                 <div className={classes.menu}>
                 <Link to="/qr">QR Code</Link>
+                <Link to="/create">Create Exercise</Link>
+                <Link to="/random">Random Exercise Table</Link>
+
+                <Link to="/tutorial">Exercise Tutorials</Link>
+                
                   <Link to="/profile">Profile</Link>
 
                   <a onClick={logout}>Logout</a>

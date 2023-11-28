@@ -5,12 +5,21 @@
 }
 
 .header a {
-  color: #d3abab;
+  color: goldenrod;
+  background: #5f3030;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-2px) rotate(2deg); }
+  50% { transform: translateX(2px) rotate(-2deg); }
+  75% { transform: translateX(-2px) rotate(2deg); }
+  100% { transform: translateX(0); }
 }
 
 .header a:hover {
-  background: #999494;
-  color: white;
+  background: #805858;
+  animation: shake 0.3s ease infinite;
   cursor: pointer;
 }
 
@@ -43,7 +52,7 @@
 .menu {
   position: absolute;
   z-index: 1001;
-  background-color: whitesmoke;
+  background-color: rgb(49, 2, 2);
   display: none;
 }
 

@@ -8,6 +8,10 @@ import AuthRoute from "./components/AuthRoute/AuthRoute";
 
 import ProfilePage from "./pages/Profile/ProfilePage";
 import QRGenerator from "./components/QRGenerator/QRGenerator";
+import CreateExercise from "./components/CreateExercise/CreateExercise";
+import GymExerciseTable from "./components/GymExerciseTable/GymExerciseTable";
+import Tutorial from "./components/Tutorial/Tutorial";
+
 
 
 export default function AppRoutes() {
@@ -37,6 +41,35 @@ export default function AppRoutes() {
           </AuthRoute>
         }
       />
+
+<Route
+        path="/create"
+        element={
+          <AuthRoute>
+            <CreateExercise />
+          </AuthRoute>
+        }
+      />
+      <Route
+        path="/random"
+        element={
+          <AuthRoute>
+            <GymExerciseTable />
+          </AuthRoute>
+        }
+      />
+
+<Route
+        path="/tutorial"
+        element={
+          <AuthRoute>
+            <Tutorial />
+          </AuthRoute>
+        }
+      />
+
+
+
 
     </Routes>
   );
