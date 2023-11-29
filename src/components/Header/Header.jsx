@@ -23,6 +23,8 @@ export default function Header() {
                 <div className={classes.menu}>
                 <Link to="/qr">QR Code</Link>
                 <Link to="/create">Create Exercise</Link>
+                <Link to="/classes">Classes</Link>
+                <Link to="/exercises">Cardio Log</Link>
                 <Link to="/random">Random Exercise Table</Link>
 
                 <Link to="/tutorial">Exercise Tutorials</Link>

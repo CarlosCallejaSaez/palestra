@@ -1,4 +1,4 @@
 import axios from "axios";
 
 axios.defaults.baseURL =
-  "https://carloscalleja-restaurant-backend.onrender.com";
+  "http://localhost:5000";
