@@ -8,8 +8,11 @@ import DarkMode from "./components/DarkMode/DarkMode";
 
 
 
+
 function App() {
   const { showLoading, hideLoading } = useLoading();
+
+  
 
   useEffect(() => {
     setLoadingInterceptor({ showLoading, hideLoading });
@@ -20,6 +23,8 @@ function App() {
   
   return (
     <>
+
+      
     
       <DarkMode/>
       

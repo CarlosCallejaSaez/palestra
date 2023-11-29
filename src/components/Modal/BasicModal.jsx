@@ -32,12 +32,12 @@ export default function BasicModal() {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
+            Palestra Gym Philosophy
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+          Every drop of sweat, every sore muscle, and every ounce of effort is a step closer to your goals. <br/> <br/> Embrace the challenge, because in each workout, you are sculpting a stronger, healthier version of yourself. The pain you feel today is the strength you'll feel tomorrow.<br/> <br/> Keep pushing, and remember: fitness is not about being better than someone else; it's about being better than you used to be.
           </Typography>
-          <img src="/palestra.png" alt="Descripción de la imagen" style={{ width: '100%', marginTop: '20px' }} />
+          <img src="/palestra.png" alt="palestra" style={{ width: '100%', marginTop: '20px' }} />
         </Box>
       </Modal>
     </div>
