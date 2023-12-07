@@ -54,7 +54,7 @@ const GymExerciseTable = () => {
 
   return (
     <div className={classes.container}>
-      <h2>Gym Exercise Table</h2>
+      <h1>Gym Exercise Table</h1>
       <button onClick={regenerateTable}>Generate Random Exercises</button>
       <table className={classes.table}>
         <thead>

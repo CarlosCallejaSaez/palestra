@@ -18,12 +18,10 @@ const ClassesUser = () => {
  
 
   return (
-    <div>
-      <h1>Class Management</h1>
-      <div>
+    <>
       
       <div>
-        <h2>Class List</h2>
+        <h1>Class List</h1>
         <ul>
           {classes.map((c) => (
             <li key={c._id}>
@@ -33,8 +31,9 @@ const ClassesUser = () => {
           ))}
         </ul>
       </div>
-    </div>
-    </div>
+    
+    
+    </>
   );
 };
 

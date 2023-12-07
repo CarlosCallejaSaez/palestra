@@ -21,9 +21,10 @@ export default function Header() {
               <li className={classes.menu_container}>
                 <Link to="/dashboard"> 🦾 Glad to see you again, {user.name} 🦾</Link>
                 <div className={classes.menu}>
+                <Link to="/contact">Contact Us</Link>
                 <Link to="/qr">QR Code</Link>
-                <Link to="/create">Create Exercise</Link>
                 <Link to="/classes">Classes</Link>
+                <Link to="/rest">Rest Timer</Link>
                 <Link to="/exercises">Cardio Log</Link>
                 <Link to="/random">Random Exercise Table</Link>
 

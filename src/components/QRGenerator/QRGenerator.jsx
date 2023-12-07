@@ -15,7 +15,7 @@ const QRGenerator = () => {
 
   return (
     <div className={classes.container}>
-      <h2>QR Code Generator</h2>
+      <h1>QR Code Generator</h1>
       <div>
        
         <button onClick={generateQRCode}>Generate QR Code</button>

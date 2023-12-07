@@ -23,7 +23,7 @@ const VideoSelector = () => {
 
   return (
     <div className={classes.container}>
-      <label htmlFor="exerciseSelect">Select an exercise to watch a tutorial about it </label>
+      <h1>Select an exercise to watch a tutorial about it </h1>
       <select id="exerciseSelect" onChange={handleSelectChange} value={selectedExercise}>
         <option value="">Select an exercise</option>
         <option value="benchPress">Bench Press</option>
@@ -33,7 +33,7 @@ const VideoSelector = () => {
 
       {selectedExercise && (
         <div>
-          <h2>In the video below you can see how to {selectedExercise}</h2>
+          <h1>In the video below you can see how to {selectedExercise}</h1>
           {getVideoUrl()}
         </div>
       )}

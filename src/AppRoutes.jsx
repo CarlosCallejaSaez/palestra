@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-;
+
 import HomePage from "./pages/Home/HomePage";
 import LoginPage from "./pages/Login/LoginPage";
 import RegisterPage from "./pages/Register/RegisterPage";
@@ -13,6 +13,8 @@ import GymExerciseTable from "./components/GymExerciseTable/GymExerciseTable";
 import Tutorial from "./components/Tutorial/Tutorial";
 import ClassesPage from "./pages/Classes/ClassesPage";
 import ExercisesPage from "./pages/Exercises/ExercisesPage";
+import RestTimerPage from "./pages/RestTimer/RestTimerPage";
+import ContactUsPage from "./pages/ContactUs/ContactUsPage";
 
 
 
@@ -27,6 +29,8 @@ export default function AppRoutes() {
 
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />
+      <Route path="/contact" element={<ContactUsPage />} />
+      
 
 
       <Route
@@ -62,6 +66,15 @@ export default function AppRoutes() {
         element={
           <AuthRoute>
             <Tutorial />
+          </AuthRoute>
+        }
+      />
+
+<Route
+        path="/rest"
+        element={
+          <AuthRoute>
+            <RestTimerPage />
           </AuthRoute>
         }
       />
