@@ -36,10 +36,10 @@ const Map = () => {
 
 
 {distance !== null && (
-        <p className="distance-info">
+        <h1 className="distance-info">
           The distance between your location and Palestra Gym is approximately {distance / 1000} kilometers. 
           Take a step closer to fulfilling your dreams!
-        </p>
+        </h1>
       )}
       <MapContainer
         center={[businessLocation.latitude, businessLocation.longitude]}

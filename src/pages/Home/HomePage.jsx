@@ -14,7 +14,7 @@ const HomePage = () => {
      <BasicModal/>
       <Clock/>
       <Map/>
-
+      
   
       </div>
   )

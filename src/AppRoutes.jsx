@@ -15,6 +15,7 @@ import ClassesPage from "./pages/Classes/ClassesPage";
 import ExercisesPage from "./pages/Exercises/ExercisesPage";
 import RestTimerPage from "./pages/RestTimer/RestTimerPage";
 import ContactUsPage from "./pages/ContactUs/ContactUsPage";
+import PdfReaderPage from "./pages/PdfReader/PdfReaderPage";
 
 
 
@@ -25,6 +26,7 @@ export default function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
+      <Route path="/doc" element={<PdfReaderPage   />} />
 
 
       <Route path="/login" element={<LoginPage />} />

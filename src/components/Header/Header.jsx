@@ -15,12 +15,16 @@ export default function Header() {
         <Link to="/" className={classes.logo}>
           PALESTRA GYM
         </Link>
+
+        
         <nav>
           <ul>
+          <Link to="/doc">APP Documentation</Link>
             {user ? (
               <li className={classes.menu_container}>
-                <Link to="/dashboard"> 🦾 Glad to see you again, {user.name} 🦾</Link>
+                <Link to="/profile"> 🦾 Glad to see you again, {user.name} 🦾</Link>
                 <div className={classes.menu}>
+               
                 <Link to="/contact">Contact Us</Link>
                 <Link to="/qr">QR Code</Link>
                 <Link to="/classes">Classes</Link>

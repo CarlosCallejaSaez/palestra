@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import "./ClassesUser.css"
 
 const ClassesUser = () => {
   const [classes, setClasses] = useState([]);
@@ -18,9 +19,9 @@ const ClassesUser = () => {
  
 
   return (
-    <>
+   
       
-      <div>
+      <div className="container">
         <h1>Class List</h1>
         <ul>
           {classes.map((c) => (
@@ -33,7 +34,7 @@ const ClassesUser = () => {
       </div>
     
     
-    </>
+    
   );
 };
 
