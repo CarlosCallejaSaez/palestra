@@ -29,6 +29,7 @@ export default function Header() {
                
                 <Link to="/Staff">Discover Our Staff</Link>
                 <Link to="/qr">QR Code</Link>
+                <Link to="/vending">Vending Machine Payment</Link>
                 <Link to="/classes">Classes</Link>
                 <Link to="/rest">Rest Timer</Link>
                 <Link to="/exercises">Cardio Log</Link>
