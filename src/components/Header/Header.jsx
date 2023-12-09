@@ -20,12 +20,14 @@ export default function Header() {
         <nav>
           <ul>
           <Link to="/doc">APP Documentation</Link>
+         
+          <Link to="/contact">Contact Us</Link>
             {user ? (
               <li className={classes.menu_container}>
                 <Link to="/profile"> 🦾 Glad to see you again, {user.name} 🦾</Link>
                 <div className={classes.menu}>
                
-                <Link to="/contact">Contact Us</Link>
+                <Link to="/Staff">Discover Our Staff</Link>
                 <Link to="/qr">QR Code</Link>
                 <Link to="/classes">Classes</Link>
                 <Link to="/rest">Rest Timer</Link>

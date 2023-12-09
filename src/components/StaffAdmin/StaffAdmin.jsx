@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import "./StaffAdmin.css"
 
 const StaffAdmin = () => {
   const [name, setName] = useState('');
@@ -61,8 +62,8 @@ const StaffAdmin = () => {
 
   return (
     <>
-    <div>
-      <h2>Add Staff Member</h2>
+    <div className='container-add'>
+      <h1>Add Staff Member</h1>
       <form onSubmit={handleSubmit}>
         <label>
           Name:
@@ -76,13 +77,14 @@ const StaffAdmin = () => {
       </form>
     </div>
 
-<div>
-<h2>Staff List</h2>
+    <div className='container'>
+   
+<h1>Staff List</h1>
 <ul>
   {staff.map((staff) => (
     <li key={staff._id}>
       <img src={staff.avatar} alt={staff.name}  />
-      {staff.name}
+      <h2>{staff.name}</h2>
       <button onClick={() => handleDelete(staff._id)}>Delete</button>
     </li>
   ))}
