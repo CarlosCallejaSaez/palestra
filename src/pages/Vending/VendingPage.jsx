@@ -37,15 +37,15 @@ const VendingPage = () => {
         <h3>Available Items:</h3>
         <ul>
           <li>
-            Water - $2.50{' '}
+            Water - 2.50 €{' '}
             <button onClick={() => handleAddToCart('Water', 2.50)}>Add to Cart</button>
           </li>
           <li>
-            Whey Protein Shake - $3.75{' '}
+            Whey Protein Shake - 3.75 €{' '}
             <button onClick={() => handleAddToCart('Whey Protein Shake', 3.75)}>Add to Cart</button>
           </li>
           <li>
-            Gym Towel - $10.00{' '}
+            Gym Towel - 10.00 €{' '}
             <button onClick={() => handleAddToCart('Gym Towel ', 10)}>Add to Cart</button>
           </li>
         </ul>
