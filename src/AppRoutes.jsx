@@ -16,7 +16,7 @@ import ExercisesPage from "./pages/Exercises/ExercisesPage";
 import RestTimerPage from "./pages/RestTimer/RestTimerPage";
 import ContactUsPage from "./pages/ContactUs/ContactUsPage";
 import PdfReaderPage from "./pages/PdfReader/PdfReaderPage";
-
+import StaffAdmin from "./components/StaffAdmin/StaffAdmin";
 
 
 export default function AppRoutes() {
@@ -27,6 +27,7 @@ export default function AppRoutes() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/doc" element={<PdfReaderPage   />} />
+      <Route path="/staff" element={<StaffAdmin   />} />
 
 
       <Route path="/login" element={<LoginPage />} />
