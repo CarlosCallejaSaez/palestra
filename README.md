@@ -1,5 +1,11 @@
 # PALESTRA - Gym Management App
 
+[🚀 Deploy Netlify](palestra-carloscalleja.netlify.app)
+
+[Backend deploy](https://carloscalleja-palestra.onrender.com)
+[Backend Github](https://github.com/CarlosCallejaSaez/palestra-backend)
+
+
 PALESTRA is a comprehensive gym management application developed using the MERN stack. This application is designed to streamline gym operations and enhance the user experience for both administrators and members.
 
 
