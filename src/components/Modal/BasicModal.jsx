@@ -37,7 +37,7 @@ export default function BasicModal() {
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
           Every drop of sweat, every sore muscle, and every ounce of effort is a step closer to your goals. <br/> <br/> Embrace the challenge, because in each workout, you are sculpting a stronger, healthier version of yourself. The pain you feel today is the strength you'll feel tomorrow.<br/> <br/> Keep pushing, and remember: fitness is not about being better than someone else; it's about being better than you used to be.
           </Typography>
-          <img src="/palestra.png" alt="palestra" style={{ width: '100%', marginTop: '20px' }} />
+          
         </Box>
       </Modal>
     </div>
