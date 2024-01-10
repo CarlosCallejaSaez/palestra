@@ -1,8 +1,36 @@
-# React + Vite
+# PALESTRA - Gym Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PALESTRA is a comprehensive gym management application developed using the MERN stack. This application is designed to streamline gym operations and enhance the user experience for both administrators and members.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+
+- **Frontend:**
+  - React.js
+  - Emotion
+  - Material-UI
+  - and more...
+
+- **Backend:**
+  - Node.js
+  - Express.js
+  - MongoDB
+  - Firebase
+  - and more...
+
+## Features
+
+- **User Authentication:** Secure user authentication using Firebase.
+- **Payment Integration:** 
+- **PDF Viewing:** Utilizes React PDF Viewer for viewing PDF documents.
+- **QR Code Generation:** Generates QR codes using the React QR Code library.
+- **Map Integration:** Integrates Leaflet for mapping functionality.
+- **Form Handling:** Uses React Hook Form for efficient form handling.
+- **Responsive Design:** Ensures a responsive user interface using React Responsive.
+- **Toast Notifications:** Provides user feedback through React Toastify.
+
+## License
+
+This project is licensed under the MIT License 
+
+
