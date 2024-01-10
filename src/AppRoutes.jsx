@@ -18,6 +18,7 @@ import ContactUsPage from "./pages/ContactUs/ContactUsPage";
 import PdfReaderPage from "./pages/PdfReader/PdfReaderPage";
 import StaffPage from "./pages/Staff/StaffPage";
 import VendingPage from "./pages/Vending/VendingPage";
+import ChatBot from "./components/ChatBot/ChatBot";
 
 
 export default function AppRoutes() {
@@ -28,6 +29,7 @@ export default function AppRoutes() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/doc" element={<PdfReaderPage   />} />
+      <Route path="/chatbot" element={<ChatBot   />} />
       <Route path="/staff" element={<StaffPage   />} />
       <Route path="/vending" element={<VendingPage   />} />
 

@@ -20,6 +20,7 @@ export default function Header() {
         <nav>
           <ul>
           <Link to="/doc">APP Documentation</Link>
+          <Link to="/chatbot">Chat Bot</Link>
          
           <Link to="/contact">Contact Us</Link>
             {user ? (
