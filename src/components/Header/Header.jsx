@@ -19,11 +19,9 @@ export default function Header() {
         
         <nav>
           <ul>
-          <Link to="/doc">PDF APP Documentation</Link>
-          <Link to="/videodoc">Video APP Documentation</Link>
-          <Link to="/chatbot">Chat Bot</Link>
+          
          
-          <Link to="/contact">Contact Us</Link>
+        
             {user ? (
               <li className={classes.menu_container}>
                 <Link to="/profile"> 🦾 Glad to see you again, {user.name} 🦾</Link>
@@ -46,7 +44,13 @@ export default function Header() {
               </li>
               
             ) : (
+              <>
               <Link to="/login">Login</Link>
+              <Link to="/doc">PDF APP Documentation</Link>
+          <Link to="/videodoc">Video APP Documentation</Link>
+          <Link to="/chatbot">Chat Bot</Link>
+          <Link to="/contact">Contact Us</Link>
+          </>
             )}
 
 

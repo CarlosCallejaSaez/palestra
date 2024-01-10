@@ -5,6 +5,8 @@ import { useLoading } from "./hooks/useLoading";
 import { setLoadingInterceptor } from "./interceptors/loadingInterceptor";
 import { useEffect } from "react";
 import DarkMode from "./components/DarkMode/DarkMode";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 
 
@@ -25,13 +27,13 @@ function App() {
     <>
 
       
-    
+<Header/>
       <DarkMode/>
       
       <Loading />
 
       <AppRoutes />
-
+      <Footer/>
    
     </>
   );

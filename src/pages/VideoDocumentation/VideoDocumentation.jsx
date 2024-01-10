@@ -5,7 +5,7 @@ const VideoDocumentation = () => {
 
     
 
-    const youtubeVideoUrl = 'https://www.youtube.com/watch?v=uDNaFdZXpF0';
+    const youtubeVideoUrl = 'https://www.youtube.com/watch?v=pdBGuW8WMbY';
   
     
   

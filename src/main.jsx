@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-import Header from "./components/Header/Header";
+
 import "./axiosConfig";
 import { AuthProvider } from "./hooks/useAuth";
 import { ToastContainer } from "react-toastify";
@@ -12,7 +12,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { LoadingProvider } from "./hooks/useLoading";
 import "./interceptors/authInterceptor";
 import 'leaflet/dist/leaflet.css';
-import Footer from "./components/Footer/Footer";
+
 
 
 
@@ -26,9 +26,9 @@ root.render(
       <LoadingProvider>
         <AuthProvider>
         
-          <Header />
+          
           <App />
-          <Footer />
+      
           <ToastContainer
             position="bottom-right"
             autoClose={5000}

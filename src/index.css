@@ -1,18 +1,7 @@
-body {
-  --color-background: #fafafa;
-  --color-foreground: #1f2023;
-}
-body.dark {
-  --color-background: #1f2023;
-  --color-foreground: #efefef;
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
-
-a{
-  text-decoration:none
-}
-
-a:hover{
-  color:black
-}
+a{text-decoration: none;}
