@@ -11,8 +11,10 @@ const HomePage = () => {
   
   return (
     <div className='home-container'>
-      
-     Click to know more about us <BasicModal/>
+      <p>☣☣ If you want to see admin functionalities, user: carlosadmin@gmail.com pw: 12345 ☣☣ </p>
+      <p>☣☣ Demo user, user: carlos@gmail.com pw: 12345 ☣☣ </p>
+    <BasicModal/>
+    Click to know more about us 
       <Clock/>
       <Map/>
       
