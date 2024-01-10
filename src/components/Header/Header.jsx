@@ -23,7 +23,7 @@ export default function Header() {
         </Link>
 
         <nav>
-          <select
+        <span className={classes.span}>Dropdown to navigate:</span> <select
             className={`${classes.dropdown} ${selectedOption && classes.selected}`}
             value={selectedOption}
             onChange={handleDropdownChange}
@@ -43,7 +43,7 @@ export default function Header() {
             <option value="/random">Random Exercise Table</option>
             <option value="/tutorial">Exercise Tutorials</option>
             <option value="/profile">Profile</option>
-          </select>
+          </select> 
 
           {user && (
             <ul className={classes.menu}>

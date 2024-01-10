@@ -12,7 +12,7 @@ const HomePage = () => {
   return (
     <div className='home-container'>
       
-     <BasicModal/>
+     Click to know more about us <BasicModal/>
       <Clock/>
       <Map/>
       
