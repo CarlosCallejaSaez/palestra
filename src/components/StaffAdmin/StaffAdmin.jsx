@@ -83,7 +83,7 @@ const StaffAdmin = () => {
 <ul>
   {staff.map((staff) => (
     <li key={staff._id}>
-      <img src={staff.avatar} alt={staff.name}  />
+      <img src={staff.avatar} alt={staff.name} className='staff-img'  />
       <h2>{staff.name}</h2>
       <button onClick={() => handleDelete(staff._id)}>Delete</button>
     </li>

@@ -32,7 +32,7 @@ const StaffUser = () => {
 <ul>
   {staff.map((staff) => (
     <li key={staff._id}>
-      <img src={staff.avatar} alt={staff.name}  />
+      <img className='staff-img' src={staff.avatar} alt={staff.name}  />
       <h2>{staff.name}</h2>
      
     </li>

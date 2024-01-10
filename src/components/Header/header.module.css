@@ -72,3 +72,25 @@
   border-radius: 100rem;
   font-size: 0.9rem;
 }
+
+
+.dropdown {
+  appearance: none;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f3ef0bcc;
+  color: #333;
+  outline: none;
+}
+
+.dropdown:hover {
+  border-color: #555;
+}
+
+nav {
+  margin-top: 10px;
+  margin-right: 10px; 
+}

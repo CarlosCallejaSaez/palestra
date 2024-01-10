@@ -1,13 +1,19 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 import classes from "./header.module.css";
 import { useAuth } from "../../hooks/useAuth";
 
 export default function Header() {
   const { user, logout } = useAuth();
+  const navigate = useNavigate();
+  const [selectedOption, setSelectedOption] = useState("");
 
-
+  const handleDropdownChange = (event) => {
+    const selectedValue = event.target.value;
+    setSelectedOption(selectedValue);
+    navigate(selectedValue); 
+  };
 
   return (
     <header className={classes.header}>
@@ -16,45 +22,37 @@ export default function Header() {
           PALESTRA GYM
         </Link>
 
-        
         <nav>
-          <ul>
-          
-         
-        
-            {user ? (
-              <li className={classes.menu_container}>
-                <Link to="/profile"> 🦾 Glad to see you again, {user.name} 🦾</Link>
-                <div className={classes.menu}>
-               
-                <Link to="/Staff">Discover Our Staff</Link>
-                <Link to="/qr">QR Code</Link>
-                <Link to="/vending">Vending Machine Payment</Link>
-                <Link to="/classes">Classes</Link>
-                <Link to="/rest">Rest Timer</Link>
-                <Link to="/exercises">Cardio Log</Link>
-                <Link to="/random">Random Exercise Table</Link>
+          <select
+            className={`${classes.dropdown} ${selectedOption && classes.selected}`}
+            value={selectedOption}
+            onChange={handleDropdownChange}
+          >
+            <option value="/">Home</option>
+            <option value="/login">Login</option>
+            <option value="/doc">PDF APP Documentation</option>
+            <option value="/videodoc">Video APP Documentation</option>
+            <option value="/chatbot">Chat Bot</option>
+            <option value="/contact">Contact Us</option>
+            <option value="/Staff">Discover Our Staff</option>
+            <option value="/qr">QR Code</option>
+            <option value="/vending">Vending Machine Payment</option>
+            <option value="/classes">Classes</option>
+            <option value="/rest">Rest Timer</option>
+            <option value="/exercises">Cardio Log</option>
+            <option value="/random">Random Exercise Table</option>
+            <option value="/tutorial">Exercise Tutorials</option>
+            <option value="/profile">Profile</option>
+          </select>
 
-                <Link to="/tutorial">Exercise Tutorials</Link>
-                
-                  <Link to="/profile">Profile</Link>
-
-                  <a onClick={logout}>Logout</a>
-                </div>
-              </li>
+          {user && (
+            <ul className={classes.menu}>
               
-            ) : (
-              <>
-              <Link to="/login">Login</Link>
-              <Link to="/doc">PDF APP Documentation</Link>
-          <Link to="/videodoc">Video APP Documentation</Link>
-          <Link to="/chatbot">Chat Bot</Link>
-          <Link to="/contact">Contact Us</Link>
-          </>
-            )}
-
-
-          </ul>
+                  
+                  <a onClick={logout}>Logout { user.name}</a>
+               
+            </ul>
+          )}
         </nav>
       </div>
     </header>

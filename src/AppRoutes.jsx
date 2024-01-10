@@ -64,27 +64,27 @@ export default function AppRoutes() {
       <Route
         path="/random"
         element={
-          <AuthRoute>
+          
             <GymExerciseTable />
-          </AuthRoute>
+          
         }
       />
 
 <Route
         path="/tutorial"
         element={
-          <AuthRoute>
+          
             <Tutorial />
-          </AuthRoute>
+          
         }
       />
 
 <Route
         path="/rest"
         element={
-          <AuthRoute>
+          
             <RestTimerPage />
-          </AuthRoute>
+          
         }
       />
 
