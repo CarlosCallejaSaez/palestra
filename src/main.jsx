@@ -12,6 +12,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { LoadingProvider } from "./hooks/useLoading";
 import "./interceptors/authInterceptor";
 import 'leaflet/dist/leaflet.css';
+import Footer from "./components/Footer/Footer";
 
 
 
@@ -27,6 +28,7 @@ root.render(
         
           <Header />
           <App />
+          <Footer />
           <ToastContainer
             position="bottom-right"
             autoClose={5000}
